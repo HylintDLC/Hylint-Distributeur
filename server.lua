@@ -42,7 +42,7 @@ RegisterServerEvent('hylintvending:buy', function(type, name)
 		TriggerClientEvent('ox_lib:notify', src, {
 			id = 'vendError',
 			title = 'Impossible de vendre',
-			description = 'Vous n\'avez pas assez d'argent pour acheter ceci!',
+			description = 'Vous n\'avez pas assez d\'argent pour acheter ceci!',
 			type = 'error'
 		})
 	end
