@@ -32,9 +32,9 @@ RegisterServerEvent('hylintvending:buy', function(type, name)
 	if count >= classes[type].cost then
 		ox_inventory:RemoveItem(src, 'money', classes[type].cost)
 		if type == 'coffee' then
-			ox_inventory:AddItem(src, 'coffee', 1, {label = itemName[name], description = 'A '..itemName[name]})
+			ox_inventory:AddItem(src, 'coffee', 1, {label = itemName[name], description = 'Un '..itemName[name]})
 		elseif type == 'can' then
-			ox_inventory:AddItem(src, 'can', 1, {label = itemName[name], description = 'A can of '..itemName[name], image = itemName[name]})
+			ox_inventory:AddItem(src, 'can', 1, {label = itemName[name], description = 'Une cannette de '..itemName[name], image = itemName[name]})
 		elseif type == 'water' then
 			ox_inventory:AddItem(src, 'water', 1)
 		end
