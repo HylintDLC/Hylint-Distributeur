@@ -1,7 +1,7 @@
 Mettez sa dans votre item.lua de votre ox_inventory
 
 ['can'] = {
-	label = 'Soda Can',
+	label = 'Soda',
 	weight = 350,
 	client = {
 		status = { thirst = 300000 },
@@ -12,7 +12,7 @@ Mettez sa dans votre item.lua de votre ox_inventory
 },
 
 ['coffee'] = {
-	label = 'Coffee',
+	label = 'Café',
 	weight = 200,
 	client = {
 		status = { thirst = 220000, drunk = -10000 },
@@ -24,7 +24,7 @@ Mettez sa dans votre item.lua de votre ox_inventory
 },
 
 ['water'] = {
-	label = 'Bottled Water',
+	label = 'Bouteille d\'Eau',
 	weight = 500,
 	client = {
 		status = { thirst = 50000 },
