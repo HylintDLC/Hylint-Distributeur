@@ -6,7 +6,7 @@
 ![image](https://github.com/user-attachments/assets/ad1cc100-b6d5-42a1-84dd-08f5feb6b08f)
 
 ### ⭐ Pourquoi utiliser ce script ?
-- Certains distributeurs ne sont pas détectés dans ox_inventory, de plus, le code est plus propr
+- Certains distributeurs ne sont pas détectés dans ox_inventory, de plus, le code est plus propre.
 
 ### 📃 Vous aurez besoin de :
 - [ox_lib](https://github.com/overextended/ox_lib/releases/latest)
