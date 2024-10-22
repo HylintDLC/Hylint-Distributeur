@@ -43,7 +43,7 @@
 },
 
 ['water'] = {
-	label = 'Bouteille d\'Eau',
+	label = 'Bouteille d\'eau',
 	weight = 500,
 	client = {
 		status = { thirst = 50000 },
