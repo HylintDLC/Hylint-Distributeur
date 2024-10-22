@@ -161,6 +161,7 @@ local optionsSoda = {
 }
 
 exports.ox_target:addModel(modelsSoda, optionsSoda)
+
 --------- Coffee Machine
 local modelsCoffee = {
     'apa_mp_h_acc_coffeemachine_01',
