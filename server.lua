@@ -6,7 +6,7 @@ local ox_inventory = exports.ox_inventory
 
 --------- Coffee Machines
 local itemName = {
-	'Café Noir', 'Café au Lait', 'Café Sucré', 'Café Creme', -- Coffees, 1-4
+	'Café Noir', 'Café au Lait', 'Café Sucré', 'Café Crème', -- Coffees, 1-4
 	'Sprunk', 'Sprunk-Light', 'Orang-O-Tang', 'eCola', 'Diet-eCola' -- Sodas 5-9
 }
 
