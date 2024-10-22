@@ -1,5 +1,24 @@
-Mettez sa dans votre item.lua de votre ox_inventory
+# 🍵 Hylint Distributeurs — v1.0.0
 
+### 📹 Previews
+![image](https://github.com/user-attachments/assets/7e158da2-305c-4009-b761-44bbc3d3ad8b)
+![image](https://github.com/user-attachments/assets/f93b76f0-8aad-431e-ba28-61e3604ff649)
+![image](https://github.com/user-attachments/assets/ad1cc100-b6d5-42a1-84dd-08f5feb6b08f)
+
+### ⭐ Pourquoi utiliser ce script ?
+- Certains distributeurs ne sont pas détectés dans ox_inventory, de plus, le code est plus propr
+
+### 📃 Vous aurez besoin de :
+- [ox_lib](https://github.com/overextended/ox_lib/releases/latest)
+- [ox_inventory](https://github.com/overextended/ox_inventory/releases/latest)
+- [ox_target](https://github.com/overextended/ox_target/releases/latest)
+
+### 👨🏻‍💻 Comment installer/configurer ?
+- Téléchargez notre dernière release.
+- Mettez la dans votre serveur.
+- Ajoutez le code suivant dans votre script ox_inventory/data/items.lua.
+
+```lua
 ['can'] = {
 	label = 'Soda',
 	weight = 350,
@@ -34,3 +53,7 @@ Mettez sa dans votre item.lua de votre ox_inventory
 		cancel = true,
 	}
 },
+```
+
+
+### ©️ Hylint
