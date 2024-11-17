@@ -1,9 +1,15 @@
 # 🍵 Hylint Distributeurs — v2.1
 
 ### 📹 Previews
+Avant :
 ![image](https://github.com/user-attachments/assets/7e158da2-305c-4009-b761-44bbc3d3ad8b)
 ![image](https://github.com/user-attachments/assets/f93b76f0-8aad-431e-ba28-61e3604ff649)
 ![image](https://github.com/user-attachments/assets/ad1cc100-b6d5-42a1-84dd-08f5feb6b08f)
+
+Après :
+![image]([https://github.com/user-attachments/assets/ad1cc100-b6d5-42a1-84dd-08f5feb6b08f](https://cdn.discordapp.com/attachments/839127486259789896/1307782610516443197/image.png?ex=673b8ef7&is=673a3d77&hm=a56742691b50a736616e76ad0541603b1d5813931d52434112a1558a9b2839c7&))
+![image]([[https://github.com/user-attachments/assets/ad1cc100-b6d5-42a1-84dd-08f5feb6b08f](https://cdn.discordapp.com/attachments/839127486259789896/1307782610516443197/image.png?ex=673b8ef7&is=673a3d77&hm=a56742691b50a736616e76ad0541603b1d5813931d52434112a1558a9b2839c7&)](https://cdn.discordapp.com/attachments/839127486259789896/1307782610784751647/image.png?ex=673b8ef7&is=673a3d77&hm=6ad0957c480874922a028cef18bda2d579c091e657f7b4b41747037e1556a77a&))
+![image]([[https://github.com/user-attachments/assets/ad1cc100-b6d5-42a1-84dd-08f5feb6b08f](https://cdn.discordapp.com/attachments/839127486259789896/1307782610516443197/image.png?ex=673b8ef7&is=673a3d77&hm=a56742691b50a736616e76ad0541603b1d5813931d52434112a1558a9b2839c7&)](https://cdn.discordapp.com/attachments/839127486259789896/1307782611069833246/image.png?ex=673b8ef7&is=673a3d77&hm=b6264503a39437754b91fe387ec6fb10d0eb04875945f8deb80b27bc3034810f&))
 
 ### ⭐ Pourquoi utiliser ce script ?
 - Certains distributeurs ne sont pas détectés dans ox_inventory, de plus, le code est plus propre.
