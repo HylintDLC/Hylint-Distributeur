@@ -16,9 +16,9 @@ local modelsWater = {
 
 local optionsWater = {
     {
-        name = 'shark:water',
+        name = 'hylint:water',
         onSelect = function()
-            TriggerServerEvent('hylintvending:buy', 'water', 1)
+            TriggerServerEvent('hylintvending:buy', 'water')
             lib.progressBar({
                 duration = 2000,
                 label = 'Distribution de l\'eau en cours...',
@@ -54,9 +54,9 @@ local modelsSoda = {
 
 local optionsSoda = {
     {
-        name = 'shark:sodasp',
+        name = 'hylint:sodasp',
         onSelect = function()
-            TriggerServerEvent('hylintvending:buy', 'can', 5)
+            TriggerServerEvent('hylintvending:buy', 'sprunk')
             lib.progressBar({
                 duration = 4000,
                 label = 'Commande en cours...',
@@ -75,9 +75,9 @@ local optionsSoda = {
         end
     },
     {
-        name = 'shark:sodasl',
+        name = 'hylint:sodaje',
         onSelect = function()
-            TriggerServerEvent('hylintvending:buy', 'can', 6)
+            TriggerServerEvent('hylintvending:buy', 'ejunk')
             lib.progressBar({
                 duration = 4000,
                 label = 'Commande en cours...',
@@ -90,15 +90,15 @@ local optionsSoda = {
             })
         end,
         icon = 'fa-regular fa-lemon',
-        label = 'Acheter un Sprunk Light',
+        label = 'Acheter un Junk Energy',
         canInteract = function(entity, distance, coords, name, bone)
             return not IsEntityDead(entity) and distance < maxDistance
         end
     },
     {
-        name = 'shark:sodaot',
+        name = 'hylint:sodaot',
         onSelect = function()
-            TriggerServerEvent('hylintvending:buy', 'can', 7)
+            TriggerServerEvent('hylintvending:buy', 'orangotang')
             lib.progressBar({
                 duration = 4000,
                 label = 'Commande en cours...',
@@ -117,9 +117,9 @@ local optionsSoda = {
         end
     },
     {
-        name = 'shark:sodaec',
+        name = 'hylint:sodaec',
         onSelect = function()
-            TriggerServerEvent('hylintvending:buy', 'can', 8)
+            TriggerServerEvent('hylintvending:buy', 'ecola')
             lib.progressBar({
                 duration = 4000,
                 label = 'Commande en cours...',
@@ -138,9 +138,9 @@ local optionsSoda = {
         end
     },
     {
-        name = 'shark:sodaed',
+        name = 'hylint:sodaed',
         onSelect = function()
-            TriggerServerEvent('hylintvending:buy', 'can', 9)
+            TriggerServerEvent('hylintvending:buy', 'ecoladiet')
             lib.progressBar({
                 duration = 4000,
                 label = 'Commande en cours...',
@@ -175,9 +175,9 @@ local modelsCoffee = {
 
 local optionsCoffee = {
     {
-        name = 'shark:coffeebl',
+        name = 'hylint:coffeecn',
         onSelect = function()
-            TriggerServerEvent('hylintvending:buy', 'coffee', 1)
+            TriggerServerEvent('hylintvending:buy', 'coffee_black')
             lib.progressBar({
                 duration = 2000,
                 label = 'En train de faire votre café',
@@ -193,15 +193,15 @@ local optionsCoffee = {
             })
         end,
         icon = 'fa-solid fa-mug-hot',
-        label = 'Demander un café noir',
+        label = 'Demander un Café Noir',
         canInteract = function(entity, distance, coords, name, bone)
             return not IsEntityDead(entity) and distance < maxDistance
         end
     },
     {
-        name = 'shark:coffeemk',
+        name = 'hylint:coffeel',
         onSelect = function()
-            TriggerServerEvent('hylintvending:buy', 'coffee', 2)
+            TriggerServerEvent('hylintvending:buy', 'coffee_milked')
             lib.progressBar({
                 duration = 2000,
                 label = 'En train de faire votre café',
@@ -217,15 +217,15 @@ local optionsCoffee = {
             })
         end,
         icon = 'fa-solid fa-cow',
-        label = 'Demander un café au lait',
+        label = 'Demander un Café au Lait',
         canInteract = function(entity, distance, coords, name, bone)
             return not IsEntityDead(entity) and distance < maxDistance
         end
     },
     {
-        name = 'shark:coffeesg',
+        name = 'hylint:coffeesc',
         onSelect = function()
-            TriggerServerEvent('hylintvending:buy', 'coffee', 3)
+            TriggerServerEvent('hylintvending:buy', 'coffee_sugar')
             lib.progressBar({
                 duration = 2000,
                 label = 'En train de faire votre café',
@@ -241,15 +241,15 @@ local optionsCoffee = {
             })
         end,
         icon = 'fa-solid fa-cubes-stacked',
-        label = 'Demander un café with Sugar',
+        label = 'Demander un Café avec du Sucre',
         canInteract = function(entity, distance, coords, name, bone)
             return not IsEntityDead(entity) and distance < maxDistance
         end
     },
     {
-        name = 'shark:coffedb',
+        name = 'hylint:coffemocha',
         onSelect = function()
-            TriggerServerEvent('hylintvending:buy', 'coffee', 4)
+            TriggerServerEvent('hylintvending:buy', 'coffee_mocha')
             lib.progressBar({
                 duration = 2000,
                 label = 'En train de faire votre café',
@@ -265,7 +265,55 @@ local optionsCoffee = {
             })
         end,
         icon = 'fa-brands fa-canadian-maple-leaf',
-        label = 'Demander un Double-Café',
+        label = 'Demander un Mochaccino',
+        canInteract = function(entity, distance, coords, name, bone)
+            return not IsEntityDead(entity) and distance < maxDistance
+        end
+    },
+    {
+        name = 'hylint:coffecpcno',
+        onSelect = function()
+            TriggerServerEvent('hylintvending:buy', 'coffee_cpcno')
+            lib.progressBar({
+                duration = 2000,
+                label = 'En train de faire votre café',
+                useWhileDead = false,
+                canCancel = true,
+                disable = {
+                    move = true,
+                },
+                anim = {
+                    dict = 'amb@prop_human_atm@male@idle_a',
+                    clip = 'idle_a'
+                }
+            })
+        end,
+        icon = 'fa-brands fa-canadian-maple-leaf',
+        label = 'Demander un Cappuccino',
+        canInteract = function(entity, distance, coords, name, bone)
+            return not IsEntityDead(entity) and distance < maxDistance
+        end
+    },
+    {
+        name = 'hylint:coffeamrcno',
+        onSelect = function()
+            TriggerServerEvent('hylintvending:buy', 'coffee_amrcno')
+            lib.progressBar({
+                duration = 2000,
+                label = 'En train de faire votre café',
+                useWhileDead = false,
+                canCancel = true,
+                disable = {
+                    move = true,
+                },
+                anim = {
+                    dict = 'amb@prop_human_atm@male@idle_a',
+                    clip = 'idle_a'
+                }
+            })
+        end,
+        icon = 'fa-brands fa-canadian-maple-leaf',
+        label = 'Demander un Americano',
         canInteract = function(entity, distance, coords, name, bone)
             return not IsEntityDead(entity) and distance < maxDistance
         end
